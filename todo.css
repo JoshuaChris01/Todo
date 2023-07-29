@@ -1,6 +1,7 @@
 html {
-  background-color: #D8C4B6;
+  background-color: white;
   margin: 0 auto;
+
 
 }
 
@@ -8,14 +9,18 @@ html {
 header {
   text-align: center;
   font-size: small;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: oblique;
 }
+
 body {
   display: flex;
   align-items: center;
   margin: 0 auto;
   justify-content: center;
-  height: 100vh;
+  flex-wrap: wrap;
+
+
+
 }
 
 .textinput {
@@ -33,33 +38,30 @@ span {
 }
 
 .input {
-  border-radius: 10px;
-  outline: 2px solid #8EAC50;
+  outline: 2px solid black;
   border: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #e2e2e2;
   font-style: italic;
   outline-offset: 3px;
   padding: 10px 1rem;
   transition: 0.25s;
-  width: 170px;
-
-
-
+  width: 190px;
 }
 
 .firstline {
   margin-top: 25px;
   margin-left: 150px;
   margin-right: 150px;
-  border-color: #8EAC50;
+  border-color: black;
 
 }
+
 
 .secondheader {
   text-align: center;
   margin-bottom: -1px;
-  margin-top: -1px;
+  margin-top: 1px;
+  font-style: oblique;
 }
 
 .input:focus {
@@ -68,15 +70,13 @@ span {
 }
 
 .fathercontainer {
-  border-radius: 30px;
-  border: 2px solid #789b33;
-  background: linear-gradient(315deg, #e6e1c2, #ffffe6);
-  box-shadow: -20px -20px 100px #666456,
-    20px 20px 100px #ffffff;
+  margin-left: 10px;
   padding-bottom: 30px;
-  padding-top: 1px;
-  height: 90vh;
+  padding-top: 10px;
+  
   padding-bottom: 40px;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 
 .cssbuttons-io-button {
@@ -85,18 +85,18 @@ span {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  padding-left: 1px;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
   color: white;
   background: #ad5389;
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
-  border: 2px solid #8EAC50;
+  border: 2px solid black;
   box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
-  border-radius: 15px;
+  border-radius: 0px;
   margin-left: 20px;
-  margin-right: -75px;
+  margin-right: -70px;
 }
 
 .cssbuttons-io-button svg {
@@ -119,12 +119,12 @@ span {
 
 
 .generallists {
- 
-  background: linear-gradient(315deg, #e6e1c2, #ffffe6);
-  height: 370px;
-  margin-left: 25px;
-  margin-right: 25px;
-  overflow-y: scroll;
+  height: 340px;
+  margin-left: 0px;
+  margin-right: 35px;
+  width: 350px;
+
+
 
 }
 
@@ -143,13 +143,13 @@ span {
   --checkbox-border-style: solid;
   /* checkmark */
   --checkmark-size: 1.2;
- display: block;
- 
+  display: block;
+
 }
 
-.ui-checkbox, 
-.ui-checkbox *, 
-.ui-checkbox *::before, 
+.ui-checkbox,
+.ui-checkbox *,
+.ui-checkbox *::before,
 .ui-checkbox *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -200,9 +200,9 @@ span {
   -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
   transform: translate(-50%, -50%) rotate(45deg) scale(0);
   opacity: 0;
-  -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
-  -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
-  transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+  -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+  -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+  transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
 }
 
 /* actions */
@@ -235,47 +235,49 @@ span {
   opacity: 1;
 }
 
+.listcontainers {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: -20px;
+}
+
 .listitems {
   background: linear-gradient(315deg, #e6e1c2, #ffffe6);
-  box-shadow: -2px -2px 10px #666456,
-    20px 20px 100px #ffffff;
-    padding-top: 10px;
-    margin-top: 10px;
-    padding-bottom: 5px;
-    border-radius: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
-    min-width: none;
-    
-    
+  box-shadow: -2px -2px 0 #666456,
+    4px 8px 0px;
+  padding-top: 13px;
+  margin-top: 10px;
+  padding-bottom: 13px;
+  border-radius: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  min-width: none;
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+
+
 }
+
 .items {
   list-style-type: none;
   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: -5px;
-   margin-left: -10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -5px;
+  margin-left: -10px;
+  padding-left: 12px;
+  font-style: oblique;
 }
- .checkbox-container {
+
+.checkbox-container {
   display: flex;
   align-items: center;
   margin-left: 5px;
- } 
-   
- .del-button {
+}
+
+.del-button {
   padding: 20px;
   display: flex;
   justify-content: space-around;
- }
- .delbtn {
-  padding: 10px 20px;
-  margin-top: -50px;
-  border: 2px solid #789b33;
-  border-radius: 60px;
-  color: #B70404;
-  font-weight: bolder;
-  
- }
-
+}
 

@@ -81,14 +81,14 @@ function deleteButton(id) {
     const container = document.querySelector(`.p_${id}`)
     const checkbox = document.querySelector('.ui-checkbox')
 
-    if (index !== -1 && checkbox.checked) {
-        todo.splice(index, 1)
-
-        localStorage.setItem('todo', JSON.stringify(todo))
+    if ( index !== -1 || checkbox.checked ) {
+        todo.splice( index, 1 )
         
-        if (container) {
+        localStorage.setItem( 'todo', JSON.stringify(todo) )
+        
+       
             container.parentNode.removeChild(container)
-        }
+        
     }
 
 }

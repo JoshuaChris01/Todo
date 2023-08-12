@@ -80,15 +80,16 @@ function deleteButton(id) {
     const index = todo.findIndex(item => item.id === item)
     const container = document.querySelector(`.p_${id}`)
     const checkbox = document.querySelector('.ui-checkbox')
+    checkbox.check = true
 
-    if ( index !== -1 || checkbox.checked ) {
+
+    if ( index !== -1 || checkbox.check) {
         todo.splice( index, 1 )
+        container.parentNode.removeChild(container)
         
         localStorage.setItem( 'todo', JSON.stringify(todo) )
         
        
-            container.parentNode.removeChild(container)
-        
     }
 
 }
